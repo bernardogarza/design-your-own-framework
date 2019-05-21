@@ -157,7 +157,46 @@
     color: #fff;
 }
 
-/* .top-title button{
+.curriculum-button:hover{
+    opacity: 0.8;
+}
+
+.story{
+    display: flex;
+    padding-bottom: 36px;
+}
+
+.story img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.story div:nth-of-type(1){
+    padding-top: 16px;
+}
+
+.story .article-title{
+    margin: 0;
+    text-align: left;
+    font-weight: normal;
+    color: #cc9543;
+}
+
+.story div:nth-of-type(2) {
+    margin-left: 15px;
+}
+
+.story .text {
+    padding-top: 5px;
+    text-align: left;
+}
+
+.succes-stories{
+    text-align: center;
+}
+
+.succes-stories button{
     padding: 16px 56px;
     background-color: #6abfc3;
     border-radius: 0.2em;
@@ -168,8 +207,21 @@
     letter-spacing: 0.2px;
     color: #fff;
 }
-.top-title button:hover{
+.succes-stories button:hover{
     opacity: 0.8;
-} */
+}
 
+.bottom-part{
+    padding-top: 36px;
+}
 
+.bottom-part p{
+    padding-top: 80px;
+    font-size: 35px;
+    color: rgba(74,74,74,0.7);
+    margin: 0 auto 1rem
+}
+
+.bottom-part button{
+    margin: 45px 0 80px;
+}
