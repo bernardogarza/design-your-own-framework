@@ -102,14 +102,74 @@
 .language {
     background-color: #F3F3F3;
     text-align: center;
+    padding: 60px 0;
 }
 
-.language .col-4 {
-    background-color: white;
-    margin: 10px 5px;
+.language .article-title{
+    margin-bottom: 60px;
+    font-size: 1.5rem;
+    letter-spacing: 0.3px;
+    color: #4a4a4a;
+}
+
+.flex-lang-section{
+    box-shadow: 0 7px 16px 0 rgba(0,0,0,0.05);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 256px;
+    margin: 0 30px 30px 0;
+    max-width: 254px;
+    padding: 23px 46px 25px;
+    text-align: center;
+    width: 254px;
 }
 
 .language img{
     width: 160px;
     height: 160px;
+    align-self: center;
 }
+
+.flex-lang{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 950px;
+    margin: 0 auto;
+}
+
+.lang-row{
+    display: flex;
+    justify-content: center;
+
+}
+
+.curriculum-button{
+    padding: 16px 56px;
+    background-color: #cc9543;
+    border-radius: 0.2em;
+    box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    color: #fff;
+}
+
+/* .top-title button{
+    padding: 16px 56px;
+    background-color: #6abfc3;
+    border-radius: 0.2em;
+    box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    color: #fff;
+}
+.top-title button:hover{
+    opacity: 0.8;
+} */
+
+
