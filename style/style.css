@@ -140,9 +140,7 @@
 }
 
 .lang-row{
-    display: flex;
-    justify-content: center;
-
+    padding: 0 150px;
 }
 
 .curriculum-button{
@@ -212,6 +210,7 @@
     letter-spacing: 0.2px;
     color: #fff;
 }
+
 .succes-stories button:hover{
     opacity: 0.8;
 }
@@ -276,4 +275,36 @@
 .footer-links div{
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 768px){
+    .lang-row{
+        padding: 0 75px;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-img{
+        padding-bottom: 15px;
+    }
+
+    .footer-icons{
+        padding-bottom: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+    .header-right{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1224px){
+    .lang-row{
+        padding: 0 15px;
+    }
 }
