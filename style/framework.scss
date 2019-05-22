@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    /* Add the next line into the header of the HTML document */
+    /* <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"> */
+}
+
+@mixin widthSize($wd) {
+    width: $wd;
+}
+
+@mixin widthColumn($wd) {
+    width: $wd;
+    float: left;
+    margin: 0 5px;
+}
+
+.grid-container{
+    @include widthSize(1224px);
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: inline;
+}
+
+.col-1{
+    @include widthColumn(calc(100%/12 - 10px));
+}
+
+.col-2{
+    @include widthColumn(calc(100%*2/12 - 10px));
+}
+
+.col-3{
+    @include widthColumn(calc(100%*3/12 - 10px));
+}
+
+.col-4{
+    @include widthColumn(calc(100%*4/12 - 10px));
+}
+
+.col-5{
+    @include widthColumn(calc(100%*5/12 - 10px));
+}
+
+.col-6{
+    @include widthColumn(calc(100%*6/12 - 10px));
+}
+
+.col-7{
+    @include widthColumn(calc(100%*7/12 - 10px));
+}
+
+.col-8{
+    @include widthColumn(calc(100%*8/12 - 10px));
+}
+
+.col-9{
+    @include widthColumn(calc(100%*9/12 - 10px));
+}
+
+.col-10{
+    @include widthColumn(calc(100%*10/12 - 10px));
+}
+
+.col-11{
+    @include widthColumn(calc(100%*11/12 - 10px));
+}
+
+.col-12{
+    @include widthColumn(calc(100% - 10px));
+}
+
+.items-container{
+    @include widthSize(1224px);
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main-title{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.article-title{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.link a{
+    color: #333;
+    text-decoration: none;
+}
+.link a:hover{
+    font-weight: bold;
+    color: black;
+}
+
+.button button{
+    background: rgb(216, 216, 216);
+    padding: 5px 15px;
+    border: none;
+    box-sizing: border-box;
+}
+.button button:active{
+    background: rgb(255, 255, 255);
+}
+.button button:hover{
+    color: rgb(134, 134, 134);
+    border-radius: 2px;
+    border-bottom: 1px solid rgba(97, 97, 97, 0.486);
+    border-right: 1px solid rgba(75, 74, 74, 0.486);
+}
+
+
+@media only screen and (max-width: 1224px){
+    
+    .grid-container,
+    .items-container{
+        @include widthSize(1024px);
+    }
+    
+    .col-lg-1{
+        @include widthColumn(calc(100%/12 - 10px));
+    }
+    
+    .col-lg-2{
+        @include widthColumn(calc(100%*2/12 - 10px));
+    }
+    
+    .col-lg-3{
+        @include widthColumn(calc(100%*3/12 - 10px));
+    }
+    
+    .col-lg-4{
+        @include widthColumn(calc(100%*4/12 - 10px));
+    }
+    
+    .col-lg-5{
+        @include widthColumn(calc(100%*5/12 - 10px));
+    }
+    
+    .col-lg-6{
+        @include widthColumn(calc(100%*6/12 - 10px));
+    }
+    
+    .col-lg-7{
+        @include widthColumn(calc(100%*7/12 - 10px));
+    }
+    
+    .col-lg-8{
+        @include widthColumn(calc(100%*8/12 - 10px));
+    }
+    
+    .col-lg-9{
+        @include widthColumn(calc(100%*9/12 - 10px));
+    }
+    
+    .col-lg-10{
+        @include widthColumn(calc(100%*10/12 - 10px));
+    }
+    
+    .col-lg-11{
+        @include widthColumn(calc(100%*11/12 - 10px));
+    }
+    
+    .col-lg-12{
+        @include widthColumn(calc(100% - 10px));
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+    
+    .grid-container,
+    .items-container{
+        @include widthSize(768px);
+    }
+    
+    .col-md-1{
+        @include widthColumn(calc(100%/12 - 10px));
+    }
+    
+    .col-md-2{
+        @include widthColumn(calc(100%*2/12 - 10px));
+    }
+    
+    .col-md-3{
+        @include widthColumn(calc(100%*3/12 - 10px));
+    }
+    
+    .col-md-4{
+        @include widthColumn(calc(100%*4/12 - 10px));
+    }
+    
+    .col-md-5{
+        @include widthColumn(calc(100%*5/12 - 10px));
+    }
+    
+    .col-md-6{
+        @include widthColumn(calc(100%*6/12 - 10px));
+    }
+    
+    .col-md-7{
+        @include widthColumn(calc(100%*7/12 - 10px));
+    }
+    
+    .col-md-8{
+        @include widthColumn(calc(100%*8/12 - 10px));
+    }
+    
+    .col-md-9{
+        @include widthColumn(calc(100%*9/12 - 10px));
+    }
+    
+    .col-md-10{
+        @include widthColumn(calc(100%*10/12 - 10px));
+    }
+    
+    .col-md-11{
+        @include widthColumn(calc(100%*11/12 - 10px));
+    }
+    
+    .col-md-12{
+        @include widthColumn(calc(100% - 10px));
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    
+    .grid-container,
+    .items-container{
+        @include widthSize(100%);
+    }
+
+    .col-sm-1{
+        @include widthColumn(calc(100%/12 - 10px));
+    }
+    
+    .col-sm-2{
+        @include widthColumn(calc(100%*2/12 - 10px));
+    }
+    
+    .col-sm-3{
+        @include widthColumn(calc(100%*3/12 - 10px));
+    }
+    
+    .col-sm-4{
+        @include widthColumn(calc(100%*4/12 - 10px));
+    }
+    
+    .col-sm-5{
+        @include widthColumn(calc(100%*5/12 - 10px));
+    }
+    
+    .col-sm-6{
+        @include widthColumn(calc(100%*6/12 - 10px));
+    }
+    
+    .col-sm-7{
+        @include widthColumn(calc(100%*7/12 - 10px));
+    }
+    
+    .col-sm-8{
+        @include widthColumn(calc(100%*8/12 - 10px));
+    }
+    
+    .col-sm-9{
+        @include widthColumn(calc(100%*9/12 - 10px));
+    }
+    
+    .col-sm-10{
+        @include widthColumn(calc(100%*10/12 - 10px));
+    }
+    
+    .col-sm-11{
+        @include widthColumn(calc(100%*11/12 - 10px));
+    }
+    
+    .col-sm-12{
+        @include widthColumn(calc(100% - 10px));
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+    
+    .col-xs-1{
+        @include widthColumn(calc(100%/12 - 10px));
+    }
+    
+    .col-xs-2{
+        @include widthColumn(calc(100%*2/12 - 10px));
+    }
+    
+    .col-xs-3{
+        @include widthColumn(calc(100%*3/12 - 10px));
+    }
+    
+    .col-xs-4{
+        @include widthColumn(calc(100%*4/12 - 10px));
+    }
+    
+    .col-xs-5{
+        @include widthColumn(calc(100%*5/12 - 10px));
+    }
+    
+    .col-xs-6{
+        @include widthColumn(calc(100%*6/12 - 10px));
+    }
+    
+    .col-xs-7{
+        @include widthColumn(calc(100%*7/12 - 10px));
+    }
+    
+    .col-xs-8{
+        @include widthColumn(calc(100%*8/12 - 10px));
+    }
+    
+    .col-xs-9{
+        @include widthColumn(calc(100%*9/12 - 10px));
+    }
+    
+    .col-xs-10{
+        @include widthColumn(calc(100%*10/12 - 10px));
+    }
+    
+    .col-xs-11{
+        @include widthColumn(calc(100%*11/12 - 10px));
+    }
+    
+    .col-xs-12{
+        @include widthColumn(calc(100% - 10px));
+    }
+
+}
