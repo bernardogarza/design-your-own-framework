@@ -1,36 +1,36 @@
 .header{
+    align-items: center;
     display: flex !important;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 50px;
 }
 
 .header-left{
+    align-items: center;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
 }
 
 .header-right{
+    align-content: center;
     display: flex;
     justify-content: flex-end;
-    align-content: center;
 }
 
 .header-right div {
     margin: 0 8px;
 }
 .top-title{
-    text-align: center;
     padding-bottom: 60px;
+    text-align: center;
 }
 
 .top-title p:nth-of-type(1){
     color: #ce973e;
-    padding-bottom: 30px;
     font-size: 2.25rem;
     font-weight: 300;
     letter-spacing: 0.4px;
+    padding-bottom: 30px;
 }
 
 .top-title p:nth-of-type(2){
@@ -41,40 +41,42 @@
 }
 
 .top-title button{
-    padding: 16px 56px;
     background-color: #6abfc3;
     border-radius: 0.2em;
-    box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
     border: none;
+    box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
+    color: #fff;
     font-size: 1em;
     font-weight: bold;
     letter-spacing: 0.2px;
-    color: #fff;
+    padding: 16px 56px;
 }
 .top-title button:hover{
     opacity: 0.8;
 }
 
 .description{
+    margin: 0 auto;
+    max-width: 600px;
+    padding-bottom: 100px;
+    padding-top: 70px;
     padding: 0 15px;
     text-align: center;
-    padding-top: 70px;
-    max-width: 600px;
-    margin: 0 auto;
-    padding-bottom: 100px;
 }
 
 .description p:nth-of-type(1){
-    margin-bottom: 36px;
     color: #4a4a4a;
+    margin-bottom: 30px;
+    padding-top: 30px;
 }
 
 .text{
-    padding-top: 18px;
     color: rgba(74,74,74,0.7);
     font-size: 1.125rem;
     letter-spacing: 0.2px;
     line-height: 1.88;
+    padding-bottom: 50px;
+    padding-top: 18px;
 }
 
 .steps {
@@ -86,13 +88,17 @@
     flex-direction: column;
 }
 .steps img {
-    width: auto;
     height: 165px;
+    width: auto;
 }
 
 .article-title{
-    text-align: center;
     margin: 50px auto 20px;
+    text-align: center;
+}
+
+.flex-lang-section .article-title p {
+    font-size: 18px;
 }
 
 .steps p {
@@ -101,20 +107,21 @@
 
 .language {
     background-color: #F3F3F3;
-    text-align: center;
     padding: 60px 0;
+    text-align: center;
 }
 
 .language .article-title{
-    margin-bottom: 60px;
+    color: #4a4a4a;
     font-size: 1.5rem;
     letter-spacing: 0.3px;
-    color: #4a4a4a;
+    margin-bottom: 60px;
+    margin-top: 20px;
 }
 
 .flex-lang-section{
-    box-shadow: 0 7px 16px 0 rgba(0,0,0,0.05);
     background: #fff;
+    box-shadow: 0 7px 16px 0 rgba(0,0,0,0.05);
     display: flex;
     flex-direction: column;
     height: 256px;
@@ -126,17 +133,17 @@
 }
 
 .language img{
-    width: 160px;
-    height: 160px;
     align-self: center;
+    height: 160px;
+    width: 160px;
 }
 
 .flex-lang{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    width: 950px;
+    justify-content: center;
     margin: 0 auto;
+    width: 950px;
 }
 
 .lang-row{
@@ -144,15 +151,16 @@
 }
 
 .curriculum-button{
-    padding: 16px 56px;
     background-color: #cc9543;
     border-radius: 0.2em;
-    box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
     border: none;
+    box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
+    color: #fff;
     font-size: 1em;
     font-weight: bold;
     letter-spacing: 0.2px;
-    color: #fff;
+    margin-right: 30px;
+    padding: 16px 56px;
 }
 
 .curriculum-button:hover{
@@ -170,9 +178,9 @@
 }
 
 .story img{
-    width: 50px;
-    height: 50px;
     border-radius: 100%;
+    height: 50px;
+    width: 50px;
 }
 
 .story div:nth-of-type(1){
@@ -180,10 +188,10 @@
 }
 
 .story .article-title{
+    color: #cc9543;
+    font-weight: normal;
     margin: 0;
     text-align: left;
-    font-weight: normal;
-    color: #cc9543;
 }
 
 .story div:nth-of-type(2) {
@@ -200,15 +208,15 @@
 }
 
 .succes-stories button{
-    padding: 16px 56px;
     background-color: #6abfc3;
     border-radius: 0.2em;
-    box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
     border: none;
+    box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
+    color: #fff;
     font-size: 1em;
     font-weight: bold;
     letter-spacing: 0.2px;
-    color: #fff;
+    padding: 16px 56px;
 }
 
 .succes-stories button:hover{
@@ -220,10 +228,10 @@
 }
 
 .bottom-part p{
-    padding-top: 80px;
-    font-size: 35px;
     color: rgba(74,74,74,0.7);
-    margin: 0 auto 1rem
+    font-size: 35px;
+    margin: 0 auto 1rem;
+    padding-top: 80px;
 }
 
 .bottom-part button{
@@ -231,16 +239,16 @@
 }
 
 .footer{
-    display: flex !important;
     background-color: #fff;
-    padding: 0;
-    text-align: center;
-    font-size: 1em;
-    min-height: 277px;
-    width: 100%;
-    position: relative;
     bottom: 0px;
+    display: flex !important;
+    font-size: 1em;
     justify-content: center;
+    min-height: 277px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
 }
 
 .footer-img{
@@ -248,25 +256,25 @@
 }
 
 .footer-icons{
+    align-items: center;
     display: flex !important;
     justify-content: space-around;
-    align-items: center;
 }
 .footer-icons i{
-    font-size: 24px;
     color: #ce973e;
     cursor: pointer;
+    font-size: 24px;
 }
 .footer-icons i:hover{
     color: black;
 }
 
 .footer-links{
+    align-items: center;
     display: flex;
+    font-weight: bold;
     justify-content: space-evenly;
     line-height: 1.7;
-    font-weight: bold;
-    align-items: center;
 }
 .footer-links div a{
     color: #828282;
@@ -283,8 +291,8 @@
     }
 
     .footer{
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
     }
 
     .footer-img{

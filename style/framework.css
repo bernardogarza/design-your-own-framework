@@ -1,8 +1,8 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body {
@@ -12,16 +12,16 @@ body {
 }
 
 .grid-container {
-  width: 1224px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
   height: auto;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 1224px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .row {
@@ -29,99 +29,99 @@ body {
 }
 
 .col-1 {
-  width: calc(100%/12 - 10px);
   float: left;
   margin: 0 5px;
+  width: calc(100%/12 - 10px);
 }
 
 .col-2 {
-  width: calc(100%*2/12 - 10px);
   float: left;
   margin: 0 5px;
+  width: calc(100%*2/12 - 10px);
 }
 
 .col-3 {
-  width: calc(100%*3/12 - 10px);
   float: left;
   margin: 0 5px;
+  width: calc(100%*3/12 - 10px);
 }
 
 .col-4 {
-  width: calc(100%*4/12 - 10px);
   float: left;
   margin: 0 5px;
+  width: calc(100%*4/12 - 10px);
 }
 
 .col-5 {
-  width: calc(100%*5/12 - 10px);
   float: left;
   margin: 0 5px;
+  width: calc(100%*5/12 - 10px);
 }
 
 .col-6 {
-  width: calc(100%*6/12 - 10px);
   float: left;
   margin: 0 5px;
+  width: calc(100%*6/12 - 10px);
 }
 
 .col-7 {
-  width: calc(100%*7/12 - 10px);
   float: left;
   margin: 0 5px;
+  width: calc(100%*7/12 - 10px);
 }
 
 .col-8 {
-  width: calc(100%*8/12 - 10px);
   float: left;
   margin: 0 5px;
+  width: calc(100%*8/12 - 10px);
 }
 
 .col-9 {
-  width: calc(100%*9/12 - 10px);
   float: left;
   margin: 0 5px;
+  width: calc(100%*9/12 - 10px);
 }
 
 .col-10 {
-  width: calc(100%*10/12 - 10px);
   float: left;
   margin: 0 5px;
+  width: calc(100%*10/12 - 10px);
 }
 
 .col-11 {
-  width: calc(100%*11/12 - 10px);
   float: left;
   margin: 0 5px;
+  width: calc(100%*11/12 - 10px);
 }
 
 .col-12 {
-  width: calc(100% - 10px);
   float: left;
   margin: 0 5px;
+  width: calc(100% - 10px);
 }
 
 .items-container {
-  width: 1224px;
-  height: auto;
-  margin: 0 auto;
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 1224px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .main-title {
-  font-weight: bold;
   font-size: 30px;
+  font-weight: bold;
   text-align: center;
 }
 
 .article-title {
-  font-weight: bold;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .link a {
@@ -130,16 +130,16 @@ body {
 }
 
 .link a:hover {
-  font-weight: bold;
   color: black;
+  font-weight: bold;
 }
 
 .button button {
   background: #d8d8d8;
-  padding: 5px 15px;
   border: none;
+  box-sizing: border-box;
+  padding: 5px 15px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .button button:active {
@@ -147,10 +147,10 @@ body {
 }
 
 .button button:hover {
-  color: #868686;
-  border-radius: 2px;
   border-bottom: 1px solid rgba(97, 97, 97, 0.486);
+  border-radius: 2px;
   border-right: 1px solid rgba(75, 74, 74, 0.486);
+  color: #868686;
 }
 
 @media only screen and (max-width: 1224px) {
@@ -159,64 +159,64 @@ body {
     width: 1024px;
   }
   .col-lg-1 {
-    width: calc(100%/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%/12 - 10px);
   }
   .col-lg-2 {
-    width: calc(100%*2/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*2/12 - 10px);
   }
   .col-lg-3 {
-    width: calc(100%*3/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*3/12 - 10px);
   }
   .col-lg-4 {
-    width: calc(100%*4/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*4/12 - 10px);
   }
   .col-lg-5 {
-    width: calc(100%*5/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*5/12 - 10px);
   }
   .col-lg-6 {
-    width: calc(100%*6/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*6/12 - 10px);
   }
   .col-lg-7 {
-    width: calc(100%*7/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*7/12 - 10px);
   }
   .col-lg-8 {
-    width: calc(100%*8/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*8/12 - 10px);
   }
   .col-lg-9 {
-    width: calc(100%*9/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*9/12 - 10px);
   }
   .col-lg-10 {
-    width: calc(100%*10/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*10/12 - 10px);
   }
   .col-lg-11 {
-    width: calc(100%*11/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*11/12 - 10px);
   }
   .col-lg-12 {
-    width: calc(100% - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100% - 10px);
   }
 }
 
@@ -226,64 +226,64 @@ body {
     width: 768px;
   }
   .col-md-1 {
-    width: calc(100%/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%/12 - 10px);
   }
   .col-md-2 {
-    width: calc(100%*2/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*2/12 - 10px);
   }
   .col-md-3 {
-    width: calc(100%*3/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*3/12 - 10px);
   }
   .col-md-4 {
-    width: calc(100%*4/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*4/12 - 10px);
   }
   .col-md-5 {
-    width: calc(100%*5/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*5/12 - 10px);
   }
   .col-md-6 {
-    width: calc(100%*6/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*6/12 - 10px);
   }
   .col-md-7 {
-    width: calc(100%*7/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*7/12 - 10px);
   }
   .col-md-8 {
-    width: calc(100%*8/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*8/12 - 10px);
   }
   .col-md-9 {
-    width: calc(100%*9/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*9/12 - 10px);
   }
   .col-md-10 {
-    width: calc(100%*10/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*10/12 - 10px);
   }
   .col-md-11 {
-    width: calc(100%*11/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*11/12 - 10px);
   }
   .col-md-12 {
-    width: calc(100% - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100% - 10px);
   }
 }
 
@@ -293,127 +293,127 @@ body {
     width: 100%;
   }
   .col-sm-1 {
-    width: calc(100%/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%/12 - 10px);
   }
   .col-sm-2 {
-    width: calc(100%*2/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*2/12 - 10px);
   }
   .col-sm-3 {
-    width: calc(100%*3/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*3/12 - 10px);
   }
   .col-sm-4 {
-    width: calc(100%*4/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*4/12 - 10px);
   }
   .col-sm-5 {
-    width: calc(100%*5/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*5/12 - 10px);
   }
   .col-sm-6 {
-    width: calc(100%*6/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*6/12 - 10px);
   }
   .col-sm-7 {
-    width: calc(100%*7/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*7/12 - 10px);
   }
   .col-sm-8 {
-    width: calc(100%*8/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*8/12 - 10px);
   }
   .col-sm-9 {
-    width: calc(100%*9/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*9/12 - 10px);
   }
   .col-sm-10 {
-    width: calc(100%*10/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*10/12 - 10px);
   }
   .col-sm-11 {
-    width: calc(100%*11/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*11/12 - 10px);
   }
   .col-sm-12 {
-    width: calc(100% - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100% - 10px);
   }
 }
 
 @media only screen and (max-width: 480px) {
   .col-xs-1 {
-    width: calc(100%/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%/12 - 10px);
   }
   .col-xs-2 {
-    width: calc(100%*2/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*2/12 - 10px);
   }
   .col-xs-3 {
-    width: calc(100%*3/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*3/12 - 10px);
   }
   .col-xs-4 {
-    width: calc(100%*4/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*4/12 - 10px);
   }
   .col-xs-5 {
-    width: calc(100%*5/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*5/12 - 10px);
   }
   .col-xs-6 {
-    width: calc(100%*6/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*6/12 - 10px);
   }
   .col-xs-7 {
-    width: calc(100%*7/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*7/12 - 10px);
   }
   .col-xs-8 {
-    width: calc(100%*8/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*8/12 - 10px);
   }
   .col-xs-9 {
-    width: calc(100%*9/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*9/12 - 10px);
   }
   .col-xs-10 {
-    width: calc(100%*10/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*10/12 - 10px);
   }
   .col-xs-11 {
-    width: calc(100%*11/12 - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100%*11/12 - 10px);
   }
   .col-xs-12 {
-    width: calc(100% - 10px);
     float: left;
     margin: 0 5px;
+    width: calc(100% - 10px);
   }
 }
 /*# sourceMappingURL=framework.css.map */
